@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=./css/styles.css />
     <title>WebStudio</title>
   </head>
 
@@ -48,11 +49,11 @@
           <div class="container">
           <h1  hidden>Портфолио</h1>
             <ul class="button-list list">
-                <li><button class="buttons current-button" type="button">Все</button></li>
-                <li><button class="buttons" type="button">Веб-сайты</li>
-                <li><button class="buttons" type="button">Приложения</li>
-                <li><button class="buttons" type="button">Дизайн</li>
-                <li><button class="buttons" type="button">Маркетинг</li>
+                <li class="buttons-li"><button class="buttons current-button" type="button">Все</button></li>
+                <li class="buttons-li"><button class="buttons" type="button">Веб-сайты</li>
+                <li class="buttons-li"><button class="buttons" type="button">Приложения</li>
+                <li class="buttons-li"><button class="buttons" type="button">Дизайн</li>
+                <li class="buttons-li"><button class="buttons" type="button">Маркетинг</li>
             </ul>
             <ul class="portfolio-list list">
                 <li class="portfolio-item">
@@ -62,16 +63,22 @@
                     width="370" 
                     height="294"
                     >
-                    <h2 class="portfolio-title">Технокряк</h2>
-                    <p class="portfolio-text">Веб-сайт</p></li>
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Технокряк</h2>
+                      <p class="portfolio-text">Веб-сайт</p>
+                    </div>
+                </li>
+                    
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
                     src="./images/portfolio_img/portfolio_img2.jpg" 
                     alt="Постер о спорте" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                    <p class="portfolio-text">Дизайн</p>
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                      <p class="portfolio-text">Дизайн</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -79,9 +86,10 @@
                     alt="Ресторан" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                    <p class="portfolio-text">Приложение</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
+                      <p class="portfolio-text">Приложение</p>
+                    </div>  
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -89,9 +97,11 @@
                     alt="Музыкальный проект" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
-                    <p class="portfolio-text">Маркетинг</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
+                      <p class="portfolio-text">Маркетинг</p>
+                    </div>
+                      
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -99,9 +109,10 @@
                     alt="Проект Boxes"
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
-                    <p class="portfolio-text">Приложение</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
+                      <p class="portfolio-text">Приложение</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -109,9 +120,10 @@
                     alt="Проект о вдохновлении" 
                     width="370"
                     height="294">
-                    <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                    <p class="portfolio-text">Веб-сайт</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
+                      <p class="portfolio-text">Веб-сайт</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -119,9 +131,10 @@
                     alt="Книжное издание" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Издание <span lang="en">Limited Edition</span></h2>
-                    <p class="portfolio-text">Дизайн</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Издание <span lang="en">Limited Edition</span></h2>
+                      <p class="portfolio-text">Дизайн</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -129,9 +142,10 @@
                     alt="Проект Lab" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
-                    <p class="portfolio-text">Маркетинг</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
+                      <p class="portfolio-text">Маркетинг</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
                     <img class="portfolio-photos"
@@ -139,9 +153,10 @@
                     alt="Бизнес-проект" 
                     width="370" 
                     height="294">
-                    <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                    <p class="portfolio-text">Приложение</p>
-
+                    <div class="portfolio-card-text">
+                      <h2 class="portfolio-title" lang="en">Growing Business</h2>
+                      <p class="portfolio-text">Приложение</p>
+                    </div>
                 </li>
             </ul>
             </div>
